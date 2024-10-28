@@ -1,0 +1,45 @@
+############################## Training Info ##############################
+ - experiment name : new_ab-mea-no-enc
+ - datasets root : data\measured0421_nozero\codebookEnc_list.npy
+ - traing EPOCHS : 100
+ - batch size : 256
+ - activate function : Tanh
+ - optimizer : adam
+ - learn rate : 0.001
+ - train time : 00:01<00:00, 57.01it/s, test_acc=62.34%, train_loss=0.58738
+ - loss funcition :BCEWithLogitsLoss()
+ - Net : 
+Net(
+  (net): Sequential(
+    (0): NetLayer(
+      (linear): Linear(in_features=3, out_features=720, bias=True)
+      (act): Tanh()
+    )
+    (1): NetLayer(
+      (linear): Linear(in_features=720, out_features=256, bias=True)
+      (act): Tanh()
+    )
+    (2): NetLayer(
+      (linear): Linear(in_features=256, out_features=256, bias=True)
+      (act): Tanh()
+    )
+    (3): NetLayer(
+      (linear): Linear(in_features=256, out_features=256, bias=True)
+      (act): Tanh()
+    )
+    (4): NetLayer(
+      (linear): Linear(in_features=256, out_features=256, bias=True)
+      (act): Tanh()
+    )
+    (5): NetLayer(
+      (linear): Linear(in_features=256, out_features=256, bias=True)
+      (act): Tanh()
+    )
+    (6): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (7): NetLayer(
+      (linear): Linear(in_features=256, out_features=25, bias=True)
+      (act): NoAF()
+    )
+  )
+)
+############################## Training Info ##############################

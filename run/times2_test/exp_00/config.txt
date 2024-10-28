@@ -1,0 +1,36 @@
+############################## Training Info ##############################
+ - experiment name : times2_test
+ - datasets root : data\2023-04-23\coordinate_list.npy
+ - traing EPOCHS : 200
+ - batch size : 256
+ - activate function : ReLU
+ - optimizer : sgd
+ - learn rate : 0.1
+ - train time : 00:09<00:00, 20.40it/s, test_acc=86.56%, train_loss=0.00088
+ - loss funcition : MSE
+ - Net : 
+Net_multicls(
+  (net): Sequential(
+    (0): NetLayer(
+      (linear): Linear(in_features=360, out_features=128, bias=True)
+      (act): ReLU()
+    )
+    (1): NetLayer(
+      (linear): Linear(in_features=128, out_features=128, bias=True)
+      (act): ReLU()
+    )
+    (2): NetLayer(
+      (linear): Linear(in_features=128, out_features=128, bias=True)
+      (act): ReLU()
+    )
+    (3): NetLayer(
+      (linear): Linear(in_features=128, out_features=128, bias=True)
+      (act): ReLU()
+    )
+    (4): NetLayer(
+      (linear): Linear(in_features=128, out_features=38, bias=True)
+      (act): NoAF()
+    )
+  )
+)
+############################## Training Info ##############################

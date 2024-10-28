@@ -1,0 +1,1 @@
+Tanh-None-adam-B256-hL256-lr0.001-E100-p0.8_
